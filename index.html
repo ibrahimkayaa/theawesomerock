@@ -16,14 +16,14 @@
         ctx.font = "30px Comic Sans MS";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
+        ctx.fillText("Use Desktop for Interactive NFT experience! ", canvas.width/2, canvas.height/2);
         
 
         var img = new Image();
         img.onload = function() {
-          ctx.drawImage(img, 0, 0);
+          ctx.drawImage(img, 0, 0,500,500);
         };
         img.src = 'https://gateway.pinata.cloud/ipfs/QmV664kRuH8dFWZeEBsARCJuyn4rqkFCKWaAeFG61qc8kB';
-        ctx.fillText("Mobile Devices are not supported!\nUse Desktop for Interactive NFT experience! ", canvas.width/2, canvas.height/2);
         // Mobile device style: fill the whole browser client area with the game canvas:
         // var meta = document.createElement('meta');
         // meta.name = 'viewport';
