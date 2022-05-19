@@ -10,7 +10,7 @@
     <canvas id="unity-canvas" width=500 height=500 style="width: 500px; height: 500px; background: #000000">  </canvas>
     <script src="Build/v11.loader.js"></script>
     <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      if (/Mobile|iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var canvas = document.getElementById("unity-canvas");
         var ctx = canvas.getContext("2d");
         ctx.font = "30px Arial Bold";
