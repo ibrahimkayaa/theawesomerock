@@ -13,15 +13,16 @@
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var canvas = document.getElementById("unity-canvas");
         var ctx = canvas.getContext("2d");
-        ctx.font = "30px Comic Sans MS";
+        ctx.font = "20px Roboto";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
-        ctx.fillText("Use Desktop for Interactive NFT experience! ", canvas.width/2, canvas.height/2);
         
 
         var img = new Image();
         img.onload = function() {
           ctx.drawImage(img, 0, 0,500,500);
+          ctx.fillText("Use Desktop for Interactive NFT", canvas.width/2, canvas.height/2);
+
         };
         img.src = 'https://gateway.pinata.cloud/ipfs/QmV664kRuH8dFWZeEBsARCJuyn4rqkFCKWaAeFG61qc8kB';
         // Mobile device style: fill the whole browser client area with the game canvas:
